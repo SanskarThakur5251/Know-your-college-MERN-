@@ -1,5 +1,7 @@
 # Know Your College - MERN Web Application
 
+#It is NOT Vibe Coded - I leraned this with practice
+
 A full-stack MERN (MongoDB, Express, React, Node.js) web application designed to help students explore and learn about their college. Built with modern web technologies, secure authentication, and an intuitive user interface.
 
 ---
