@@ -1,0 +1,76 @@
+.reviewsWrapper {
+  background-color: #0f172a; /* dark navy */
+  padding: 50px 0;
+  color: #f8fafc;
+  overflow: hidden; /* important for sliding effect */
+  position: relative;
+}
+
+.reviewsContainer {
+  display: flex;
+  gap: 25px;
+  animation: slide 25s linear infinite;
+  width: max-content; /* allows smooth scrolling of content wider than viewport */
+  padding: 0 20px;
+}
+
+.reviewCard {
+  background-color: #1e293b;
+  border-radius: 12px;
+  min-width: 280px; /* fixed width to make the carousel uniform */
+  flex-shrink: 0;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.reviewCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.reviewCard h3 {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.reviewCard p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* 🎬 Sliding animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🧠 Optional: Pause animation on hover */
+.reviewsWrapper:hover .reviewsContainer {
+  animation-play-state: paused;
+}
+
+/* 📱 Make sure it works nicely on mobile */
+@media (max-width: 600px) {
+  .reviewCard {
+    min-width: 220px;
+  }
+  .reviewsContainer {
+    gap: 15px;
+  }
+}

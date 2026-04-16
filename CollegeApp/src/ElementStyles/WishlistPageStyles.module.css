@@ -1,0 +1,96 @@
+.all {
+  margin-top: 18vh;
+}
+
+.wishlistPage {
+  padding: 20px;
+  background: #0f172a; /* dark background */
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+/* ✅ Grid for Wishlist Cards */
+.collegeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.collegeCard {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 20vw;   /* responsive-ish width */
+  height: 40vh;  /* fixed height */
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collegeCard:hover {
+  transform: translateY(-5px);
+}
+
+.collegeLink {
+  text-decoration: none;
+  color: inherit;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.collegeImage {
+  width: 100%;
+  height: 50%;  /* top half */
+  object-fit: cover;
+}
+
+.collegeInfo {
+  cursor: text;
+  padding: 8px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collegeInfo h3 {
+  margin: 2px 0;
+  color: #f8fafc;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.collegeInfo p {
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.removeButton {
+  background: #ef4444; /* red remove button */
+  border: none;
+  padding: 6px;
+  border-radius: 0 0 12px 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 100%;
+  width: 100%;
+
+}
+
+.removeButton:hover {
+  background: #dc2626;
+}

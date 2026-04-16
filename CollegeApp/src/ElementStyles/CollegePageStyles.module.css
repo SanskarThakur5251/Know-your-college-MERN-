@@ -1,0 +1,73 @@
+.collegePageall{
+  margin-top: 18vh;
+}
+.collegePage {
+  background-color: #0f172a; /* dark navy like navbar */
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.collegeName {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #38bdf8; /* light blue highlight */
+}
+
+.location {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.imageGallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.collegeImage {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.collegeImage:hover {
+  transform: scale(1.05);
+}
+
+.detailsSection {
+  width: auto;
+  max-width: auto;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.loading {
+  color: #38bdf8;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+}

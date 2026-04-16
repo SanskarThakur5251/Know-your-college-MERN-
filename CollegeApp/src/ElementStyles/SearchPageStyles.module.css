@@ -1,0 +1,133 @@
+.all{
+  margin-top: 18vh;
+}
+
+
+.wishlistPage {
+  padding: 20px;
+  background: #0f172a; /* dark background */
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+  background: #334155;
+  color: #f8fafc;
+}
+
+.searchInput:focus {
+  background: #475569;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.searchButton {
+  background: #3b82f6;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.searchButton:hover {
+  background: #2563eb;
+}
+
+/* ✅ Flexbox Cards */
+.collegeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.collegeCard {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 20vw;   /* fixed width */
+  height: 40vh;  /* fixed height */
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collegeCard:hover {
+  transform: translateY(-5px);
+}
+
+.collegeLink {
+  text-decoration: none;
+  color: inherit;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.collegeImage {
+  width: 100%;
+  height: 50%;  /* half of card height */
+  object-fit: cover;
+}
+
+.collegeInfo {
+  cursor:text;
+  padding: 8px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collegeInfo h3 {
+  cursor:text;
+  margin: 2px 0;
+  color: #f8fafc;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.collegeInfo p {
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.addBtn {
+  background: #3b82f6;
+  border: none;
+  padding: 6px;
+  border-radius: 0 0 12px 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 20%;
+}
+
+.addBtn:hover {
+  background: #2563eb;
+}

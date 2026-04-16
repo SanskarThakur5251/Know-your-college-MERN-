@@ -1,0 +1,104 @@
+.all{
+    margin-top: 20vh;
+}
+.chatContainer {
+  background: #0b132b; /* dark blue base */
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1c92d2, #32c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chatBox {
+  flex: 1;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #1c2541;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #1c2541; /* dark navy */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #1c92d2, #32c3ff);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 12px 12px 0 12px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.botMsg {
+  align-self: flex-start;
+  background: #0b132b;
+  border: 1px solid #1c92d2;
+  color: #e0f7ff;
+  padding: 0.6rem 1rem;
+  border-radius: 12px 12px 12px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.typing {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.inputBox {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #1c92d2;
+  outline: none;
+  background: #0b132b;
+  color: white;
+}
+
+.input:focus {
+  border-color: #32c3ff;
+  box-shadow: 0 0 6px rgba(50, 195, 255, 0.6);
+}
+
+.sendBtn {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1c92d2, #32c3ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sendBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

@@ -1,0 +1,51 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Parent container */
+#imageNbuttons {
+  position: relative;
+  max-width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+/* Image style */
+#image {
+  width: 100vw;
+  height: 30vh;
+  object-fit:fill;
+  display: flex;
+}
+
+/* Navigation buttons (prev and next) */
+.buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0); /* semi-transparent black */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+/* Position each button */
+#next {
+  left: 10px;
+}
+
+#prev {
+  right: 10px;
+}
+
+/* Hover effect */
+.buttons:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
